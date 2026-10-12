@@ -1,0 +1,29 @@
+/* Small additions to the unchanged LLMSC / Sniffle stylesheet. */
+.workshop-figure { margin: 1.25rem 0; }
+.workshop-figure > a { display: block; }
+.workshop-figure img { display: block; width: 90%; height: auto; margin: 0 auto; }
+.workshop-figure figcaption { margin-top: 0.5rem; text-align: center; color: #606060; font-size: 0.875rem; line-height: 1.5; }
+.program-table td { vertical-align: top; }
+a:focus-visible, label[for="nav-trigger"]:focus-visible { outline: 2px solid #2a7ae2; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .workshop-figure img { width: 100%; }
+  .workshop-figure figcaption { font-size: 0.8rem; }
+  .program-table { font-size: 0.875rem; }
+}
+/* Keep the original mobile menu until every desktop link fits on one row. */
+@media (max-width: 767px) {
+  .site-nav { position: absolute; float: none; top: 9px; right: 15px; background-color: #fdfdfd; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
+  .site-nav label[for="nav-trigger"] { display: block; }
+  .site-nav .menu-icon { display: block; }
+  .site-nav input ~ .trigger { display: none; }
+  .site-nav input:checked ~ .trigger { display: block; padding-bottom: 5px; }
+  .site-nav .page-link { display: block; padding: 5px 10px; margin-left: 20px; }
+  .site-nav .page-link:not(:last-child) { margin-right: 0; }
+  #org table tbody { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #org table tr { display: contents; }
+  #org table td { display: block; min-width: 0; padding: 10px 6px; overflow-wrap: anywhere; }
+  #org table td .col-xs-12 { float: none; padding: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

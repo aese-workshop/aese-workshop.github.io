@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>AESE 2027</title>
+  <subtitle>Agent Economics in Software Engineering</subtitle>
+  <id>urn:aese:workshop:2027</id>
+  <updated>2026-10-12T00:00:00Z</updated>
+  <link href="https://aese-workshop.github.io/"/>
+  <link href="https://aese-workshop.github.io/feed.xml" rel="self" type="application/atom+xml"/>
+  <entry>
+    <title>AESE 2027 preliminary website</title>
+    <id>urn:aese:workshop:2027:preliminary-website</id>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <author><name>AESE Organizers</name></author>
+    <content type="text">The 1st International Workshop on Agent Economics in Software Engineering is proposed for FSE 2027. Dates and submission details are to be confirmed.</content>
+  </entry>
+</feed>

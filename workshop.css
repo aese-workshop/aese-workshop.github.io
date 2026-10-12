@@ -1,0 +1,176 @@
+html {
+  scroll-behavior: smooth; /* 启用 CSS 原生平滑滚动 */
+}
+
+div.speaker {
+  margin: 2em 0;
+}
+
+div.speaker
+div.speaker-pic {
+  text-align: center;
+}
+
+div.speaker p.speaker-abstract,
+div.speaker p.speaker-bio {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+#organizers {
+  margin-top: 1em;
+}
+
+.people-pic {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.people-name {
+  margin: 10px 0 10px;
+}
+
+.people-name h6 {
+  margin: 4px 0;
+  font-weight: 100;
+  font-size: 11px;
+}
+@media (max-width:1000px) {
+    div.speaker img.people-pic {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .people-pic {
+        max-width: 65px;
+        max-height: 65px;
+    }
+    .people-name {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .people-name h6 {
+        font-size: 9px;
+    }
+}
+
+.paper-pic {
+  max-width: 200px;
+  max-height: 100px;
+  padding: 0;
+}
+
+div.award {
+    padding: 15px 0px 15px 25px;
+}
+div.award h3 {
+    font-size: 15px;
+}
+span.award-sponsor {
+    color: #666;
+    font-size: 13px;
+}
+span.award-sponsor a ,
+span.award-other a {
+    text-decoration: none;
+    border: 0;
+}
+span.award-sponsor img {
+    height: 18px;
+    margin: 0 5px;
+}
+div.award:last-child {
+    padding-top: 30px;
+}
+span.award-other img {
+    height: 18px;
+    margin-top: 2px;
+    vertical-align: top;
+}
+
+.table.schedule tr.noline td {
+  border-top: none;
+}
+.table.schedule tr td {
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px; /* 这里的值取决于 headbar 的高度 */
+}
+
+
+.workshop-title {
+  text-align: center;
+  font-size: 6vw; /* 使用视口宽度的单位 */
+  font-weight: bold;
+}
+
+.workshop-subtitle {
+  text-align: center;
+  font-size: 4vw; /* 同样使用视口宽度 */
+}
+
+/* 为较小屏幕设置限制 */
+@media (max-width: 600px) {
+  .workshop-title {
+    font-size: 8vw; /* 更小的屏幕字体稍微调大 */
+  }
+
+  .workshop-subtitle {
+    font-size: 5vw;
+  }
+}
+
+/* 为较大屏幕设置限制 */
+@media (min-width: 1200px) {
+  .workshop-title {
+    font-size: 48px; /* 为大屏幕设置固定最大字体大小 */
+  }
+
+  .workshop-subtitle {
+    font-size: 24px;
+  }
+}
+
+/* twitter容器的基础布局 */
+.container {
+display: flex;
+flex-wrap: wrap; /* 支持内容换行 */
+align-items: flex-start;
+gap: 20px;
+}
+
+/* 左侧文字内容 */
+.text-content {
+flex: 2; /* 默认占据 2/3 的空间 */
+min-width: 300px;
+}
+
+/* Twitter 卡片 */
+.twitter-card {
+flex: 1; /* 默认占据 1/3 的空间 */
+min-width: 300px;
+max-height: 400px;
+overflow: auto;
+border: 1px solid #ddd;
+border-radius: 8px;
+padding: 10px;
+background: #f9f9f9;
+box-sizing: border-box;
+}
+
+/* 移动端调整：隐藏 Twitter 卡片，文字内容全宽 */
+@media (max-width: 768px) {
+.twitter-card {
+  display: none; /* 隐藏 Twitter 卡片 */
+}
+
+.text-content {
+  flex: 1 1 100%; /* 占据容器的全部宽度 */
+}
+}
